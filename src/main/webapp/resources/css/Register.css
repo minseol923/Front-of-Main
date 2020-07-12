@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  background-color: #DBE0F9;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;0
+  align-items: center;
+}
+.wrapper .main-content {
+  padding: 50px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.wrapper .main-content h3 {
+  text-align: center;
+  color: #777;
+  margin-top: 0;
+  font-size: 2.5em;
+}
+.wrapper .main-content form {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .main-content form .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.wrapper .main-content form .input-group label {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 0.99em;
+  color: #777;
+  font-weight: bold;
+}
+.wrapper .main-content form .input-group input {
+  padding: 15px;
+  font-size: 1em;
+  border-radius: 50px;
+  border: unset;
+  background-color: #A6B1E1;
+  color: #eee;
+  transition: background .5s;
+}
+.wrapper .main-content form .input-group input:focus {
+  outline: none;
+  background-color: #3f5bd8;
+}
+.wrapper .main-content form .input-group input:focus::placeholder {
+  color: #eee;
+}
+.wrapper .main-content form .input-group button {
+  width: 150px;
+  align-self: center;
+  padding: 15px;
+  border-radius: 50px;
+  border: unset;
+  background-color: #3f5bd8;
+  color: #fff;
+  font-size: 1.1em;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.wrapper .main-content form .input-group button:hover {
+  background-color: #5772e9;
+}
+.wrapper .main-content form .input-group button:focus {
+  outline: none;
+}
+.wrapper .main-content p {
+  color: #fff;
+  text-align: center;
+  margintop: 30px;
+}
+
+
+.checkbox {
+     font-weight: normal;
+   }
