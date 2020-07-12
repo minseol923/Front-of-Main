@@ -74,12 +74,6 @@
     </div>
     
 
-    
-    
-    
-    
-    
-    
 <!--롤링 배너-->
     
  <div class="slide">
@@ -91,18 +85,12 @@
     </ul>
   </div>   
     
-
-
-    
-    
 <!-- 취미 메뉴2-->
 <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
-
-
 
 <!-- partial:index.partial.html -->
 <div class="wrapperMain">
@@ -145,8 +133,6 @@
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
-   
- 
 <br>
 
 <!------ Hot 취미 ------>
@@ -160,15 +146,11 @@
 <br>
 <br>
 <br>
-                <!-- moving box -->
-                
+<!-- moving box -->               
 <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>                
 <div class="container">
 <div class="row">
 <div class="col-sm-12">
-
-  
-
   <div id="carousel1" class="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
