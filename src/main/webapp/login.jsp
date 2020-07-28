@@ -28,7 +28,7 @@
     </section>
     <footer>
       <p><a href="" title="Forgot Password">비밀번호를 잊으셨나요?</a></p>
-      <p><a href="./" title="Register">회원가입</a></p>
+      <p><a href="/Register.jsp" title="Register">회원가입</a></p>
     </footer>
   </section>
 </section>

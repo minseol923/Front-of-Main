@@ -35,9 +35,10 @@
         
         <div class="input-group">
         <label for="phone">Gender</label>
-            <label class="checkbox">
-        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> 남<input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">여
-      </label>
+         	<label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> 남
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">여
+      		</label>
         
       </div><br>
 

@@ -47,22 +47,18 @@
          
         </li>    
             </ul>
-                     
-           
              <ul>
                  <li>
                     <a href="/login.jsp">로그인</a>               
                     <a href="/login.jsp"></a> 
-                           
-               
-                    <a href="/Register.jsp">회원가입</a>               
-                    <a href="/Register.jsp">
-            
-                        <link rel="stylesheet" href="/fontello/css/fontello-embedded.css"></a>
+       
+                    <a href="/memberjoin.jsp">회원가입</a>               
+                    <a href="/memberjoin.jsp">
+                    
+            		<link rel="stylesheet" href="/fontello/css/fontello-embedded.css"></a>
                     <a href="#"><i class="icon-user-circle-o"></i></a>
                
             </ul>
-            
         </div>
     </nav>
     <div class="full-width back-image" style="width: 100%; height: 50%;" id="first">
