@@ -1,6 +1,6 @@
 package com.Finally.dto;
 
-public class MemberDTO {
+public class SignupVO {
 	   private String mem_id;
 	   private String mem_pw;
 	   private String mem_name;
@@ -8,11 +8,6 @@ public class MemberDTO {
 	   private String mem_email;
 	   private String mem_phone;
 	   private String mem_gender;
-	   private String mem_hobby;
-	   private String mem_oaddress;
-	   private String mem_address;
-	   private String mem_detailaddress;
-	   private int mem_point;
 	   
 	   
 	public String getMem_id() {
@@ -57,35 +52,9 @@ public class MemberDTO {
 	public void setMem_gender(String mem_gender) {
 		this.mem_gender = mem_gender;
 	}
-	public String getMem_hobby() {
-		return mem_hobby;
+	public void insertSignupVO(SignupVO vo) {
+	
+		
 	}
-	public void setMem_hobby(String mem_hobby) {
-		this.mem_hobby = mem_hobby;
-	}
-	public String getMem_oaddress() {
-		return mem_oaddress;
-	}
-	public void setMem_oaddress(String mem_oaddress) {
-		this.mem_oaddress = mem_oaddress;
-	}
-	public String getMem_address() {
-		return mem_address;
-	}
-	public void setMem_address(String mem_address) {
-		this.mem_address = mem_address;
-	}
-	public String getMem_detailaddress() {
-		return mem_detailaddress;
-	}
-	public void setMem_detailaddress(String mem_detailaddress) {
-		this.mem_detailaddress = mem_detailaddress;
-	}
-	public int getMem_point() {
-		return mem_point;
-	}
-	public void setMem_point(int mem_point) {
-		this.mem_point = mem_point;
-	}
-	   
+	
 	}

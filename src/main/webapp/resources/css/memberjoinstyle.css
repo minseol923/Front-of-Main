@@ -6,44 +6,45 @@ body {
   background-color: #DBE0F9;
 }
 
-.wrapper {
+.container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;0
   align-items: center;
 }
-.wrapper .main-content {
+.container .page-header {
   padding: 50px;
   width: 100%;
   max-width: 600px;
   min-width: 200px;
   background-color: #ffffff;
   border-radius: 10px;
+  height: 835px;
 }
-.wrapper .main-content h3 {
+.container .page-header h3 {
   text-align: center;
   color: #777;
   margin-top: 0;
   font-size: 2.5em;
 }
-.wrapper .main-content form {
+.container .page-header form {
   display: flex;
   flex-direction: column;
 }
-.wrapper .main-content form .input-group {
+.container .page-header form .form-group {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
-.wrapper .main-content form .input-group label {
+.container .page-header form .form-group label {
   margin-left: 10px;
   margin-bottom: 10px;
   font-size: 0.99em;
   color: #777;
   font-weight: bold;
 }
-.wrapper .main-content form .input-group input {
+.container .page-header form .form-group input {
   padding: 15px;
   font-size: 1em;
   border-radius: 50px;
@@ -52,14 +53,14 @@ body {
   color: #eee;
   transition: background .5s;
 }
-.wrapper .main-content form .input-group input:focus {
+.container .page-header form .form-group input:focus {
   outline: none;
   background-color: #3f5bd8;
 }
-.wrapper .main-content form .input-group input:focus::placeholder {
+.container .page-header form .form-group input:focus::placeholder {
   color: #eee;
 }
-.wrapper .main-content form .input-group button {
+.container .page-header form .form-group button {
   width: 150px;
   align-self: center;
   padding: 15px;
@@ -71,16 +72,16 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
-.wrapper .main-content form .input-group button:hover {
+.container .page-header form .form-group button:hover {
   background-color: #5772e9;
 }
-.wrapper .main-content form .input-group button:focus {
+.container .page-header form .form-group button:focus {
   outline: none;
 }
-.wrapper .main-content p {
+.container .page-header p {
   color: #fff;
   text-align: center;
-  margintop: 30px;
+  margin: 100px;
 }
 
 

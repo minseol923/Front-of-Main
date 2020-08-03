@@ -1,12 +1,22 @@
 package com.Finally.dao.impl;
 
-import java.util.List; 
-import javax.servlet.http.HttpSession;
 
-import com.Finally.dto.MemberDTO; 
+import javax.inject.Inject;
 
-public interface MemberDAO {
-	// 회원가입 메소드 
-	public void memberJoinMethod(MemberDTO dto);
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Repository;
+
+import com.Finally.dto.SignupVO;
+
+
+@Repository
+public abstract class SignupDAO {
+	@Inject
+	SqlSession sqlSession;
+	
+	public void insertSignupVO(SignupVO vo) {
+		sqlSession.insert("member.insertSignupVO",vo);
+	 
+	}
 }
 

@@ -29,13 +29,15 @@
                 </li>
                 <li>
                     <a href="#third">커뮤니티</a>
+                    <a href="/write.jsp"></a>
+                    
                 </li>
                 <li>
                     <a href="#fourth">고객센터 </a>
                 </li>
                
          <li>
-                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <link rel="stylesheet" href="style.css">
 
     <div class="search-box">
