@@ -107,12 +107,9 @@
 
 	</table>
     
-    <div >
-
+    <div>
 			<button type="button" class="btn btn-sm btn-primary" id="btnWriteForm">글쓰기</button>
-
-		</div>
-
+	</div>
     </div>
 
 </div>

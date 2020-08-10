@@ -1,4 +1,4 @@
-package com.Finally.dto;
+package com.Finally.VO;
 
 public class SignupVO {
 	   private String mem_id;

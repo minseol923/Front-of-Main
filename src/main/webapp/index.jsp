@@ -28,7 +28,7 @@
                     <a href="#second">취미탐색</a>
                 </li>
                 <li>
-                    <a href="#third">커뮤니티</a>
+                    <a href="/write.jsp">커뮤니티</a>
                     <a href="/write.jsp"></a>
                     
                 </li>
@@ -315,6 +315,8 @@
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+    
+    
 </body>
 
 </html>

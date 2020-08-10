@@ -5,7 +5,7 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 
 import com.Finally.dao.impl.SignupDAO;
-import com.Finally.dto.SignupVO;
+import com.Finally.VO.SignupVO;
 
 
 @Service

@@ -13,21 +13,6 @@
 				#{mem_gender}
 				 )
     </insert>
-   <!--  <update id="updateSignupVO" parameterType="java.util.HashMap">
-        update member set
-        mem_pw = #{mem_pw},mem_name = #{mem_name},
-        mem_birth = #{mem_birth}, mem_email = #{mem_email}, 
-        mem_phone= #{mem_phone}, mem_gender={mem_gender}
-        where mem_id = #{mem_id}
-    </update>
-    <delete id="deleteSignupVO" parameterType="String">
-        delete from member where mem_id = #{mem_id}
-    </delete>
-    <select id="selectOne" parameterType="String" resultType="java.util.HashMap">
-        select * from member where mem_id = #{mem_id}
-    </select>
-    <select id="selectAll" resultType="java.util.HashMap">
-        select * from member
-    </select> -->
+   
 </mapper>
 

@@ -3,7 +3,7 @@ package com.Finally.Service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.Finally.dto.SignupVO;
+import com.Finally.VO.SignupVO;
 
 @Service
 public class SignupServiceImpl implements SignupService { 

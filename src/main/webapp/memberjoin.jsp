@@ -1,16 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
-
 <!DOCTYPE html>
- <html> 
+<html> 
 <head>
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>WELCOME TO MYHOB!</title> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="./css/memberjoinstyle.css">
-<!-- <style type="text/css">
-  td{ border:1px solid #000000; border-collapse:collapse; } 
- </style> -->
 <script type="text/javascript"> 
 //모든 공백 체크 정규식
    var empJ = /\s/g;
@@ -24,7 +20,6 @@
    var mailJ = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
  // 휴대폰 번호 정규식 
    var phoneJ = /^01([0|1|6|7|8|9]?)?([0-9]{3,4})?([0-9]{4})$/;
- 
    var birthJ = false; 
    var address = $('#mem_detailaddress');
       $(document).ready(function() { 
@@ -40,32 +35,33 @@
       }else if($('#mem_id').val()!=''){
           var mem_id=$('#mem_id').val(); 
    $.ajax({
-       async : true, 
+      async : true, 
       type : 'POST', 
-      data : mem_id,//mem_id라는 이름으로 mem_id라는 데이터를 @WebServlet("/idsearch.do")에 보내겠다
-       url : 'idcheck.do', 
+      data : mem_id, //mem_id라는 이름으로 mem_id라는 데이터를 @WebServlet("/idsearch.do")에 보내겠다
+      url : 'signup.do', 
       dateType: 'json', 
       contentType: "application/json; 
       charset=UTF-8",
-       success : function(data) {
+      success : function(data) {
           if(data.cnt > 0){
-          $('#id_check').text('중복된 아이디 입니다.');
-          $('#id_check').css('color', 'red'); 
-         $("#usercheck").attr("disabled", true); 
-   }else{ 
-      if(idJ.test(mem_id)){
-       $('#id_check').text('사용가능한 아이디 입니다.'); $('#id_check').css('color', 'blue');
-        $("#usercheck").attr("disabled", false);
-    } else if(mem_id==''){
-       $('#id_check').text('아이디를 입력해주세요.'); 
-       $('#id_check').css('color', 'red'); 
-       $("#usercheck").attr("disabled", true); 
-       } 
-   else{ 
-      $('#id_check').text("아이디는 소문자와 숫자 4~12자리만 가능합니다."); 
-      $('#id_check').css('color', 'red'); 
-      $("#usercheck").attr("disabled", true); 
-}
+         	 $('#id_check').text('중복된 아이디 입니다.');
+         	 $('#id_check').css('color', 'red'); 
+        	 $("#usercheck").attr("disabled", true); 
+   		}else{ 
+      		if(idJ.test(mem_id)){
+      		 $('#id_check').text('사용가능한 아이디 입니다.'); 
+      		 $('#id_check').css('color', 'blue');
+       		 $("#usercheck").attr("disabled", false);
+   	   } else if(mem_id==''){
+	      	 $('#id_check').text('아이디를 입력해주세요.'); 
+	       	 $('#id_check').css('color', 'red'); 
+	      	 $("#usercheck").attr("disabled", true); 
+	       } 
+	   else{ 
+		     $('#id_check').text("아이디는 소문자와 숫자 4~12자리만 가능합니다."); 
+		     $('#id_check').css('color', 'red'); 
+		     $("#usercheck").attr("disabled", true); 
+		}
    }
     }
    });//ajax/// 
@@ -204,7 +200,7 @@
     // 올해 연도 가져옴 
    if (dateStr.length <=8) {
     // 연도의 경우 1900 보다 작거나 yearNow 보다 크다면 false를 반환합니다.
-    if (year > yearNow || year < 1900 ){
+   if (year > yearNow || year < 1900 ){
        $('#birth_check').text('생년월일을 확인해주세요'); 
        $('#birth_check').css('color', 'red');
        } else if (month < 1 || month > 12) {
@@ -252,7 +248,7 @@
    <article class="container">
       <div class="page-header"> 
          <h3>회원가입</h3>
-    <form action="memberjoinpro.do" method="post" role="form" id="usercheck" name="member"> 
+    <form action="signup.do" method="post" role="form" id="usercheck" name="member"> 
    <div class="form-group">
        <label for="id">아이디</label> 
    <input type="text" class="form-control" id="mem_id" name="mem_id" placeholder="ID">
@@ -303,12 +299,11 @@
    <div class="form-group text-center"> 
    <button type="submit" class="btn btn-primary">회원가입</button> 
 </div> 
-            </div>
+</div>
 </form> 
 </div>
-
- </article>
- </body>
- </html>
+</article>
+</body>
+</html>
 
 
